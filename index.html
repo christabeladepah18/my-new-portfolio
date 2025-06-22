@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christabel Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">Chris <span>tabel</span></div>
+                <ul id="sidemenu">
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                    <li><a href="#header" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div style="display: flex; align-items: center;">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
+                </div>
+            </nav>
+
+            <div class="header-text">
+                <p>Hello, I am</p>
+                <h1>Christabel Adepah</h1>
+                <p>I'm a creative and curious designer and developer passionate about visual storytelling 
+                    and user-centered design. </p>
+                
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/15atHa75Du"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://web.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/adepah.christabel?igsh=ZzQwNHc5bnJkeTM4"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/feed"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                
+                <button class="download-btn">
+                    <i class="fas fa-download"></i><a href="Christabel Adepah (1).pdf">
+                    Download CV</a>
+                </button>
+            </div>
+            
+            <div class="header-img">
+                <img src="cris.jpg" alt="Christabel Adepah">
+            </div>
+            
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            
+            <div class="role-badge">
+                <i class="fas fa-code"></i>
+                <span>Web Developer</span>
+            </div>
+            
+            <div class="mobile-role">
+                <div class="role-badge">
+                    <i class="fa-palette"></i>
+                    <span>Graphic Designer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="chris2.jpg" alt="About Me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm a passionate and creative designer with a growing interest in building user-friendly 
+                    digital experiences.With skills in graphic design, UI/UX, and front-end development, 
+                    I enjoy bringing ideas to life from concept sketches to interactive websites.I'm currently 
+                    improving my skills in responsive web design and learning JavaScript. I'm excited to grow 
+                    and contribute to projects that make a real impact.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic Design</span><br>Layout design</li>
+                            <li><span>UI/UX</span><br>Designing Web</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025 - Current</span><br>Freelance Web Developer </li>
+                            <li><span>2024 - 2025</span><br>Creating of Pearson Web Project</li>
+                            <li><span>2024 - 2025</span><br>Freelance Graphic Design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>Web Development Certification</li>
+                            <li><span>2024</span><br>UI/UX Design Course</li>
+                            <li><span>2024</span><br>Graphic Design Course</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-palette"></i>
+                    <h2>Graphic Designer</h2>
+                    <p>Design, to me, is about making ideas visible. I believe in user-centered design, where form follows function,
+                        and every visual element serves a purpose. Whether it's a logo or a poster, my work is guided by clarity, emotion,
+                        and a touch of boldness.
+                    </p>
+                    <a href="https://www.youtube.com/embed/GQS7wPujL2k?si=sEe5g-4FYPxX9d1h"><button class="download-btn">Learn more</button></a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I'm a UI/UX designer focused on creating intuitive, accessible, and engaging digital experiences. I blend
+                        user reserch, wireframing, and visual design to craft interfaces that not only look good but feel effortless to use.
+                    </p>
+                    <a href="https://www.youtube.com/embed/1SNZRCVNizg?si=setgZFfmNTKvD8lH"><button class="download-btn">Learn more</button></a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I'm a beginner web developer passionate about creating responsive and user-friendly websites.
+                         I'm currently learning HTML, CSS, JavaScript, and building projects to improve my skills. 
+                         I love turning ideas into interactive websites that work well on all devices.</p>
+                    <a href="https://www.w3schools.com/"><button class="download-btn">Learn more</button></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" alt="Work 1">
+                    <div class="layer">
+                        <h3>Web Developer</h3>
+                        <p>The websites focused on performance, design, and usability. From landing 
+                            pages to full sites.</p>
+</p>
+                        <a href="https://web-exams.vercel.app"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="graphic.jpeg" alt="Work 2">
+                    <div class="layer">
+                        <h3>Graphic Designer</h3>
+                        <p>A visually appealing designs that communicate ideas clearly and creatively</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Screenshot (66).png" alt="Work 3">
+                    <div class="layer">
+                        <h3>UI/UX Designer</h3>
+                        <p>A user-friendly interfaces that are both visually appealing and easy to use</p>
+                        <a href="http://Christabels-piercing-project.vercel.app"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://tourism-piercing-project.vercel.app" class="btn">See more</a>
+
+        </div>
+
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> adepahchristabel@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i> +233 0532463904</p>
+                    <div class="social-icons-contact">
+                        <a href="https://www.facebook.com/share/15atHa75Du"><i class="fab fa-facebook"></i></a>
+                        <a href="https://web.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/adepah.christabel?igsh=ZzQwNHc5bnJkeTM4"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="Christabel Adepah (2).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/xyzjjoqk" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/15atHa75Du"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://web.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/adepah.christabel?igsh=ZzQwNHc5bnJkeTM4"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/feed"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2025 Christabel Adepah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+        
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function openTab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        let isDarkMode = false;
+        
+        themeToggle.addEventListener('click', () => {
+            isDarkMode = !isDarkMode;
+            body.classList.toggle('dark-mode');
+            
+            const icon = themeToggle.querySelector('i');
+            if (isDarkMode) {
+                icon.className = 'fas fa-sun';
+            } else {
+                icon.className = 'fas fa-moon';
+            }
+        });
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                sidemenu.style.right = "-200px";
+            });
+        });
+        
+        const sections = document.querySelectorAll('div[id]');
+        const navLinks = document.querySelectorAll('nav ul li a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Form Submission
+        const contactForm = document.querySelector('.contact-right form');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to a server
+            alert('Message sent successfully!');
+            contactForm.reset();
+        });
+        
+        // Download CV functionality
+        document.querySelector('.download-btn').addEventListener('click', function() {
+            // Add download animation
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 150);
+            
+            // Here you would typically trigger a file download
+            alert('CV download would start here!');
+        });
+    </script>
+
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/xyzjjoqk",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
+</body>
+</html>
